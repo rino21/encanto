@@ -6,7 +6,7 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 app.get("/",(req,res)=>{
-    res.rendFile(__dirname+"/index.html");
+    res.sendFile(__dirname+"/index.html");
 });
 
 app.get("/inscription",(req,res)=>{
